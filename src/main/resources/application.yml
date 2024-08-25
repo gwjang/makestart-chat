@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: makestar-chat
+  data:
+    redis:
+      port: 6379
+      host: localhost
+      password: 1234
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
