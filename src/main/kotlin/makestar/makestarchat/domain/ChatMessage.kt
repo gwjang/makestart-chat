@@ -13,5 +13,5 @@ class ChatMessage(
     val id: Long = 0,
     val sender: String,
     val content: String,
-    val timestamp: LocalDateTime
+    val timestamp: LocalDateTime = LocalDateTime.now()
 )
