@@ -1,4 +1,11 @@
 spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:h2:mem:codetest};DATABASE_TO_UPPER=false;
+    username: ${JDBC_DATABASE_USERNAME:sa}
+    password: ${JDBC_DATABASE_PASSWORD:password}
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
   application:
     name: makestar-chat
   data:
