@@ -1,3 +1,5 @@
+package makestar.makestarchat.dto
+
 data class ChatMessageResponse(
     var sender: String,
     var content: String,
